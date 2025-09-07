@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — นายธนวัฒน์ อุดหมอ (รหัสนักศึกษา 67319010037)</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --bg: #f7fbff;
+      --card: #ffffff;
+      --primary: #2563eb;
+      --muted: #6b7280;
+      --container-width: 1100px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Prompt', system-ui, sans-serif;
+      background: var(--bg);
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
+    .section { margin: 40px 0; padding: 20px 0; }
+    .section h2 { font-size: 1.5rem; margin-bottom: 20px; }
+
+    /* Header */
+    .site-header {
+      background: linear-gradient(180deg, rgba(37,99,235,0.12), rgba(255,255,255,0));
+      padding: 40px 0 20px;
+    }
+    .header-inner {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 6px 20px rgba(37,99,235,0.12);
+    }
+    .hero h1 { font-size: 2rem; margin-bottom: 6px; }
+    .hero .id { font-size: 0.95rem; color: var(--muted); font-weight: 600; }
+    .tagline { color: var(--muted); margin-bottom: 15px; }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 8px;
+      transition: all 0.25s ease;
+    }
+    .btn { background: var(--primary); color: #fff; }
+    .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+    .btn.outline {
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+    .btn.outline:hover { background: var(--primary); color: #fff; }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 20px;
+      align-items: start;
+    }
+    .about-text p { margin-bottom: 15px; }
+    .skill-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .skill-list li {
+      background: var(--card);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .about-img img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    /* Interests */
+    .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+    .chip {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--muted);
+      font-weight: 600;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .chip:hover { background: var(--primary); color: #fff; }
+
+    /* Contact */
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: var(--card);
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      transition: all 0.25s ease;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .card h3 { margin-bottom: 8px; font-size: 1rem; }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(0,0,0,0.05);
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="d1.jpg" alt="ภาพโปรไฟล์ของนายธนวัฒน์ อุดหมอ" class="avatar" />
+      <div class="hero">
+        <h1>นายธนวัฒน์ อุดหมอ <span class="id">(รหัสนักศึกษา: 67319010037)</span></h1>
+        <p class="tagline">นักศึกษาสาขาเทคโนโลยีสารสนเทศ | วิทยาลัยเทคนิคลำปาง</p>
+        <div class="cta">
+          <a href="#about" class="btn">เกี่ยวกับฉัน</a>
+          <a href="#contact" class="btn outline">ติดต่อ</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- About -->
+    <section id="about" class="container section about">
+      <h2>เกี่ยวกับฉัน</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            สรุปสั้น ๆ: เกิดวันที่ 21 มีนาคม พ.ศ.2549 <br />
+            ที่อยู่: 121/1 หมู่ 1 บ.ต้นธงชัย ต.ต้นธงชัย อ.เมืองลำปาง จ.ลำปาง <br />
+            <strong>ระดับการศึกษา:</strong> ปวส. วิทยาลัยเทคนิคลำปาง
+          </p>
+          <ul class="skill-list">
+            <li>HTML &amp; CSS (Responsive)</li>
+            <li>JavaScript (Vanilla, DOM)</li>
+            <li>Git / GitHub (Branch, PR, Merge)</li>
+            <li>พื้นฐาน UX / UI Design</li>
+          </ul>
+        </div>
+        <div class="about-img">
+          <img src="about.jpg" alt="ภาพประกอบเกี่ยวกับฉัน" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests" class="container section interests">
+      <h2>สิ่งที่สนใจ</h2>
+      <div class="chips">
+        <div class="chip">Web Development</div>
+        <div class="chip">UI/UX Design</div>
+        <div class="chip">Game Dev</div>
+        <div class="chip">Graphic Design</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section contact">
+      <h2>ช่องทางติดต่อ</h2>
+      <div class="contact-cards">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:tonpai6183528@gmail.com">tonpai6183528@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Phone</h3>
+          <p><a href="tel:0967763061">096-776-3061</a></p>
+        </div>
+        <div class="card">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/thanawat037/" target="_blank" rel="noopener">github.com/thanawat037</a></p>
+        </div>
+        <div class="card">
+          <h3>ที่อยู่</h3>
+          <address>
+            121/1 หมู่ 1 บ.ต้นธงชัย <br />
+            ต.ต้นธงชัย อ.เมืองลำปาง <br />
+            จ.ลำปาง
+          </address>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 นายธนวัฒน์ อุดหมอ — รหัสนักศึกษา 67319010037</p>
+    </div>
+  </footer>
+
+</body>
+</html>
